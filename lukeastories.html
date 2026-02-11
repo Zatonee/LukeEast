@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LukEASTories | LukEast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fade-up {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #f59e0b via #ea580c to #dc2626);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth">
+
+<!-- HEADER -->
+<header class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white py-6 sticky top-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <div class="flex items-center gap-2 cursor-pointer" onclick="history.back()">
+      <span class="text-2xl">←</span>
+      <h1 class="text-2xl font-bold">LukEast</h1>
+    </div>
+    <p class="text-sm font-light">See the East Differently</p>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="bg-gradient-to-b from-orange-500 to-orange-600 text-white py-16 relative overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+  
+  <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+    <h2 class="text-5xl md:text-6xl font-black mb-6 animate-fade-up">LukEASTories</h2>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.2s">
+      Cerita nyata dari <span class="font-bold text-yellow-200">destinasi, masyarakat lokal, dan pengalaman wisatawan</span> di Indonesia Timur
+    </p>
+  </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      Setiap cerita di sini adalah jendela untuk memahami keindahan, budaya, dan semangat masyarakat Indonesia Timur. 
+      Dari kisah petualangan traveler hingga kisah inspiratif dari komunitas lokal.
+    </p>
+  </div>
+</section>
+
+<!-- STORIES SECTION -->
+<section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-16 gradient-text">Destinasi Pilihan LukEast</h3>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Story: Desa Kamiri -->
+      <a href="desa-kamiri.html" class="card-hover bg-white rounded-3xl overflow-hidden shadow-lg border-t-4 border-green-500 hover:no-underline">
+        <img src="https://jadesta.kemenpar.go.id/imgpost/64425.jpg" alt="Desa Kamiri" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-green-900">Desa Kamiri</h4>
+          <p class="text-sm text-gray-600 mb-2">Sulawesi Selatan</p>
+          <p class="text-gray-600 mb-4">Petualangan Agrowisata & Kehidupan Desa Tradisional</p>
+          <p class="text-sm text-gray-700 leading-relaxed mb-4">
+            Menginap bersama keluarga lokal, belajar pertanian tradisional, membuat produk lokal, dan merasakan autentisitas kehidupan pedesaan.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">Agrowisata</span>
+            <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">Komunitas</span>
+          </div>
+          <div class="mt-4 text-orange-600 font-semibold text-sm">Lihat Detail → </div>
+        </div>
+      </a>
+
+      <!-- Story: Desa Jikumerasa -->
+      <a href="desa-jikumerasa.html" class="card-hover bg-white rounded-3xl overflow-hidden shadow-lg border-t-4 border-blue-500 hover:no-underline">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=300&fit=crop" alt="Desa Jikumerasa" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-blue-900">Desa Jikumerasa</h4>
+          <p class="text-sm text-gray-600 mb-2">Kabupaten Buru, Maluku</p>
+          <p class="text-gray-600 mb-4">Wisata Alam & Budaya Pulau Buru</p>
+          <p class="text-sm text-gray-700 leading-relaxed mb-4">
+            Jelajahi keindahan alam Pulau Buru, pelajari budaya lokal, dan nikmati pengalaman wisata yang autentik dengan masyarakat setempat.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Wisata Alam</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Budaya</span>
+          </div>
+          <div class="mt-4 text-orange-600 font-semibold text-sm">Lihat Detail → </div>
+        </div>
+      </a>
+
+      <!-- Story: Sanggar Budaya Bliransina -->
+      <a href="sanggar-budaya-bliransina.html" class="card-hover bg-white rounded-3xl overflow-hidden shadow-lg border-t-4 border-purple-500 hover:no-underline">
+        <img src="https://indonesiakaya.com/wp-content/uploads/2024/09/9-1.jpg" alt="Sanggar Budaya Bliransina" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-2xl font-bold mb-2 text-purple-900">Sanggar Budaya Bliransina</h4>
+          <p class="text-sm text-gray-600 mb-2">Watublapi, Nusa Tenggara</p>
+          <p class="text-gray-600 mb-4">Warisan Budaya & Seni Tradisional</p>
+          <p class="text-sm text-gray-700 leading-relaxed mb-4">
+            Pelajari seni tradisional, kerajinan lokal, dan warisan budaya melalui workshop interaktif dengan seniman berpengalaman.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Budaya</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Seni</span>
+          </div>
+          <div class="mt-4 text-orange-600 font-semibold text-sm">Lihat Detail → </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="py-16 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-6">Bagikan Cerita Anda</h3>
+    <p class="text-xl mb-8 leading-relaxed">
+      Apakah Anda memiliki cerita menarik dari perjalanan Anda ke Indonesia Timur? Kami ingin mendengarnya!
+    </p>
+    <a href="kirim-cerita.html" class="bg-white text-orange-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg inline-block">
+     Kirim Cerita Anda
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-gray-950 via-gray-900 to-black text-gray-300 text-center py-8 border-t border-gray-700">
+  <p class="font-semibold text-lg">© 2026 <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">LukEast</span>. See the East Differently.</p>
+</footer>
+
+</body>
+</html>
